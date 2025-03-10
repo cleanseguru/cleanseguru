@@ -21,5 +21,5 @@ A user-friendly cleaning service website featuring an easy booking system, respo
 ### 1️⃣ Clone the Repository  
 
 ```sh
-git clone https://github.com/your-username/cleanseguru.git
+git clone https://github.com/cleanseguru/cleanseguru.git
 cd cleanseguru
