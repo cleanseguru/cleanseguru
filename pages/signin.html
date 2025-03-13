@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/signin.css">
+    <script src="/assets/js/signin.js"></script>
+</head>
+
+<body>
+    <main>
+        <div id="image"><img src="/assets/images/main/branded_bg.png"></div>
+        <div id="signup-form" class="py-4 align-self-center">
+            <h1 class="d-flex justify-content-center fw-bold">SIGN IN</h1>
+            <h5 class="d-flex justify-content-center align-items-center">Welcome to&nbsp; <small
+                    class="text-primary">CleansGuru</small>
+                <br>
+            </h5>
+            <h5 class="d-flex justify-content-center align-items-center"> Please Sign In to continue
+            </h5>
+            <form>
+
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label text-primary text-uppercase">Email address</label>
+                    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp" required>
+                    <div id="emailFeedback" class="invalid-feedback">Please provide a valid email address.</div>
+                </div>
+
+                <div class="mb-3">
+                    <label for="passwordInput" class="form-label text-primary text-uppercase">Password</label>
+                    <input type="password" class="form-control" id="passwordInput" required>
+                </div>
+
+                <div class="d-flex justify-content-center">
+                    <button type="submit" class="btn btn-primary w-50">Submit</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>

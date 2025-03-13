@@ -1,0 +1,124 @@
+.logo img {
+    height: 60px;
+}
+
+.logo {
+    height: auto;
+    margin-left: 20px;
+}
+
+#hero-text {
+    position: absolute;
+    top: calc((100vw /1.40316) * 0.3);
+    right: 10%;
+    font-size: calc((100vw /1.40316)/25);
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+/* 
+r =1.40316
+w= 100vw
+h= 100vw /1.40316
+ha=w
+
+ */
+
+#hero-text span {
+    font-size: 2em;
+    margin: 0;
+    font-weight: bold;
+}
+
+#hero-text-2 {
+    position: absolute;
+    top: calc((100vw / 1.8)/0.9);
+    left: 6%;
+    font-size: calc((100vw /1.40316) / 18);
+    color: white;
+    font-weight: bold;
+}
+
+#hero-text-2 span {
+    font-size: 0.5em;
+    color: white;
+    margin: 0;
+    font-weight: normal;
+}
+
+
+#get-started {
+    background-color: #2d80ce;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 16px;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    max-lines: 1;
+}
+
+.top-content {
+    background-image: linear-gradient(#2D8FCE, #FFFFFF, #29D4FE);
+}
+
+#first-content img,
+section3-content img,
+#section2-content img {
+    width: 100%;
+    height: auto;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+#section2-text {
+    font-weight: normal;
+    position: absolute;
+    top: calc((1.5*(100vw /(1.40316))));
+    right: 5%;
+    width: 50vw;
+    font-size: calc((1.5*(100vw /(1.40316)))/40);
+}
+
+#section2-text span,
+#section2-text p span {
+    font-weight: bold;
+}
+
+#section3-text {
+    position: absolute;
+    left: 5%;
+    width: 50vw;
+    top: calc(2.25*(100vw / 1.40316));
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    color: white;
+}
+
+#section3-item  {
+    padding: 10px;
+    color: white;
+}
+
+#section3-item:first-child {
+    align-content: end;
+    border-bottom: #f4f4f4;
+    border-bottom-style: solid;
+}
+
+#section3-item span {
+    font-weight: bold;
+    font-size: calc((1.5*(100vw /(1.40316)))/40);
+
+}
+
+#section3-text a {
+    text-decoration: none;
+}
