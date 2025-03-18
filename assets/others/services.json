@@ -1,0 +1,330 @@
+[
+    {
+        "name": "House Cleaning",
+        "subtitle": "Get the Best Residential & Apartment Cleaning Services",
+        "introTitle": "House Cleaning Services",
+        "intro": "A clean home is essential for comfort and well-being, but maintaining it can be time-consuming. At Cleanse Guru, we provide top-tier apartment and house cleaning services to ensure your space stays fresh and spotless. Our trained professionals handle everything from routine cleaning to deep sanitation, giving you more time to focus on what truly matters. Using eco-friendly products and efficient cleaning techniques, we customize our services to fit your needs, whether it's a one-time deep clean or a recurring plan. Enjoy a healthier, stress-free home with our reliable and detail-oriented cleaning experts.",
+        "serviceTitle": "Why Choose Our House Cleaning Services?",
+        "service": "We go beyond surface cleaning to deliver a truly refreshing experience. Our service includes expert dusting, mopping, kitchen sanitization, and bathroom scrubbing to maintain a spotless home environment. We use safe, eco-friendly cleaning products that eliminate dirt and bacteria without harmful chemicals. Whether you need routine maintenance or an extensive deep clean, our customizable packages cover every aspect of home cleaning. Additional services like window washing, upholstery care, and carpet shampooing are available to ensure your home remains fresh, inviting, and hygienic.",
+        "listTitle": "How to Choose the Right House Cleaning Service",
+        "list": [
+            {
+                "title": "Determine Your Cleaning Needs",
+                "desc": [
+                    "Consider the size of your home and the cleaning intensity required.",
+                    "Decide between a one-time deep clean or scheduled maintenance services.",
+                    "Highlight special requirements, such as eco-friendly products or allergy-safe cleaning."
+                ]
+            },
+            {
+                "title": "Find a Reliable Cleaning Provider",
+                "desc": [
+                    "Check customer testimonials and ratings for reputable cleaning services.",
+                    "Ensure the company is licensed, insured, and follows safety protocols.",
+                    "Compare service packages and pricing to find the best fit for your budget."
+                ]
+            },
+            {
+                "title": "Set Clear Service Expectations",
+                "desc": [
+                    "Discuss your specific cleaning needs and preferred areas of focus.",
+                    "Clarify the cleaning schedule—weekly, biweekly, or monthly.",
+                    "Talk about key handling and home security measures if needed."
+                ]
+            },
+            {
+                "title": "Know What’s Included in the Cleaning Service",
+                "desc": [
+                    "Ask about the cleaning techniques and equipment used.",
+                    "Confirm whether cleaning supplies are provided or need to be arranged.",
+                    "Ensure the team follows an organized, hygienic cleaning process."
+                ]
+            },
+            {
+                "title": "Review Terms & Policies",
+                "desc": [
+                    "Read the service agreement to avoid unexpected costs.",
+                    "Check for flexible cancellation and rescheduling options.",
+                    "Make sure there’s a satisfaction guarantee or follow-up service policy."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "src": "/assets/images/services/hc-1.png",
+                "alt": "Professional cleaner wiping down a modern kitchen counter"
+            },
+            {
+                "src": "/assets/images/services/hc-2.png",
+                "alt": "Neat and tidy living room with freshly cleaned surfaces"
+            },
+            {
+                "src": "/assets/images/services/hc-3.png",
+                "alt": "Cleaning professional vacuuming a bright and spacious apartment"
+            }
+        ],
+        "latestreviews": [
+            {
+                "name": "Alice Johnson",
+                "review": "Fantastic service! My home looks and smells amazing. The team was punctual and thorough!",
+                "rating": 5
+            },
+            {
+                "name": "David Lee",
+                "review": "The cleaners did a great job with my apartment. They were professional and used safe, eco-friendly products.",
+                "rating": 4
+            },
+            {
+                "name": "Emma Wilson",
+                "review": "Very impressed! The attention to detail was outstanding, and my house has never been cleaner.",
+                "rating": 5
+            }
+        ]
+    },
+    {
+        "name": "Office Cleaning",
+        "subtitle": "Professional Office Cleaning Services for a Healthier Workplace",
+        "introTitle": "Office Cleaning Services",
+        "intro": "A clean and organized office is essential for productivity and employee well-being. At Cleanse Guru, we offer top-tier office cleaning services tailored to keep your workspace spotless, hygienic, and inviting. Our trained professionals handle everything from daily maintenance to deep cleaning, ensuring your office remains fresh and presentable. We use eco-friendly products and modern cleaning techniques to eliminate dust, germs, and allergens, creating a healthier work environment. Whether you need a one-time deep clean or regular cleaning services, we customize our plans to fit your schedule and business needs, so you can focus on running your company efficiently.",
+        "serviceTitle": "Why Choose Our Office Cleaning Services?",
+        "service": "We provide comprehensive office cleaning solutions designed to enhance workplace hygiene and efficiency. Our services include desk and surface sanitization, floor cleaning, restroom maintenance, and trash disposal to ensure a neat and professional office environment. Using eco-friendly products and advanced cleaning techniques, we help reduce the spread of germs and allergens, promoting a healthier workspace. Our customizable packages also include additional services such as window cleaning, upholstery care, and carpet shampooing to keep your office looking pristine. Whether you require daily, weekly, or biweekly cleaning, we guarantee a spotless office that fosters productivity and comfort.",
+        "listTitle": "How to Choose the Right Office Cleaning Service",
+        "list": [
+            {
+                "title": "Assess Your Office Cleaning Needs",
+                "desc": [
+                    "Determine the size of your office and the cleaning intensity required.",
+                    "Decide whether you need daily, weekly, or monthly cleaning services.",
+                    "Identify special cleaning requests, such as eco-friendly or allergy-safe products."
+                ]
+            },
+            {
+                "title": "Choose a Professional Cleaning Service",
+                "desc": [
+                    "Research and compare top-rated office cleaning companies.",
+                    "Ensure the provider is licensed, insured, and follows industry standards.",
+                    "Check for flexible pricing and packages that fit your business needs."
+                ]
+            },
+            {
+                "title": "Set Clear Cleaning Expectations",
+                "desc": [
+                    "Specify your cleaning priorities, such as high-traffic areas and shared spaces.",
+                    "Clarify the cleaning schedule to avoid disruptions during work hours.",
+                    "Discuss security measures, key handling, and access protocols."
+                ]
+            },
+            {
+                "title": "Understand the Cleaning Process",
+                "desc": [
+                    "Ask about the cleaning products and disinfectants used.",
+                    "Confirm if the company provides equipment and supplies.",
+                    "Ensure the cleaning team follows a structured and professional approach."
+                ]
+            },
+            {
+                "title": "Review Service Agreement & Policies",
+                "desc": [
+                    "Go through the service contract to avoid unexpected costs.",
+                    "Check for flexible scheduling, cancellation, and rescheduling policies.",
+                    "Ensure customer satisfaction guarantees and quality control measures are in place."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "src": "/assets/images/services/hc-1.png",
+                "alt": "Professional cleaner wiping down a modern kitchen counter"
+            },
+            {
+                "src": "/assets/images/services/hc-2.png",
+                "alt": "Neat and tidy living room with freshly cleaned surfaces"
+            },
+            {
+                "src": "/assets/images/services/hc-3.png",
+                "alt": "Cleaning professional vacuuming a bright and spacious apartment"
+            }
+        ],
+        "latestreviews": [
+            {
+                "name": "Robert Adams",
+                "review": "Our office has never looked this clean! The team was efficient and professional. Highly recommended!",
+                "rating": 5
+            },
+            {
+                "name": "Sophia Martinez",
+                "review": "Great attention to detail and eco-friendly cleaning solutions. The staff was friendly and thorough!",
+                "rating": 4
+            },
+            {
+                "name": "James Carter",
+                "review": "Impressive service! The cleaning team ensured every corner was spotless, making our workspace feel fresh and inviting.",
+                "rating": 5
+            }
+        ]
+    },
+    {
+        "name": "Carpet Cleaning",
+        "subtitle": "Professional Carpet Cleaning Services for a Fresh & Hygienic Home",
+        "introTitle": "Carpet Cleaning Services",
+        "intro": "Carpets add warmth and comfort to any space, but they also trap dust, allergens, and stains over time. At Cleanse Guru, we provide expert carpet cleaning services to restore the freshness and beauty of your carpets. Our trained professionals use advanced cleaning techniques, including steam cleaning and deep extraction, to remove dirt, bacteria, and stubborn stains effectively. Whether you need a routine carpet refresh or a deep stain removal service, we customize our cleaning process to meet your specific needs. With eco-friendly solutions and fast-drying technology, we ensure your carpets are spotless, odor-free, and safe for your family and pets.",
+        "serviceTitle": "Why Choose Our Carpet Cleaning Services?",
+        "service": "Our professional carpet cleaning service goes beyond surface cleaning to eliminate deep-seated dirt, allergens, and bacteria. We use high-powered extraction methods and non-toxic cleaning solutions to restore your carpet’s texture and vibrancy while extending its lifespan. Our services include stain treatment, deodorization, and protective coatings to keep your carpets looking and smelling fresh. Whether for residential or commercial spaces, our customizable cleaning packages ensure a healthier and cleaner environment. From high-traffic areas to delicate rugs, we provide tailored solutions for all carpet types, delivering a deep clean that enhances comfort and hygiene.",
+        "listTitle": "How to Choose the Right Carpet Cleaning Service",
+        "list": [
+            {
+                "title": "Assess Your Carpet Cleaning Needs",
+                "desc": [
+                    "Determine the level of cleaning required based on carpet condition and foot traffic.",
+                    "Decide if you need routine maintenance or deep stain removal services.",
+                    "Identify any specific concerns such as pet stains, odors, or allergens."
+                ]
+            },
+            {
+                "title": "Choose a Professional Carpet Cleaning Service",
+                "desc": [
+                    "Compare carpet cleaning companies based on reviews and experience.",
+                    "Ensure the company uses eco-friendly, non-toxic cleaning solutions.",
+                    "Check if they offer specialized treatments for stains and odor removal."
+                ]
+            },
+            {
+                "title": "Understand the Cleaning Methods",
+                "desc": [
+                    "Ask about different carpet cleaning techniques such as steam cleaning and dry cleaning.",
+                    "Confirm if they use high-powered extraction for deep dirt removal.",
+                    "Ensure the process is safe for your carpet fibers and colors."
+                ]
+            },
+            {
+                "title": "Prepare for the Cleaning Service",
+                "desc": [
+                    "Move furniture or valuables from the cleaning area if necessary.",
+                    "Discuss drying times and post-cleaning care instructions.",
+                    "Ensure proper ventilation for faster drying after the cleaning process."
+                ]
+            },
+            {
+                "title": "Review Service Terms & Guarantees",
+                "desc": [
+                    "Read the service contract to understand pricing and inclusions.",
+                    "Check if they offer stain protection treatments for long-lasting results.",
+                    "Ensure a satisfaction guarantee is in place for peace of mind."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "src": "/assets/images/services/hc-1.png",
+                "alt": "Professional cleaner wiping down a modern kitchen counter"
+            },
+            {
+                "src": "/assets/images/services/hc-2.png",
+                "alt": "Neat and tidy living room with freshly cleaned surfaces"
+            },
+            {
+                "src": "/assets/images/services/hc-3.png",
+                "alt": "Cleaning professional vacuuming a bright and spacious apartment"
+            }
+        ],
+        "latestreviews": [
+            {
+                "name": "Olivia Roberts",
+                "review": "Incredible job! My carpets look brand new, and all stains are gone. Highly recommended service!",
+                "rating": 5
+            },
+            {
+                "name": "Liam Turner",
+                "review": "The team was professional and used safe cleaning solutions. My carpets dried quickly and smell amazing!",
+                "rating": 4
+            },
+            {
+                "name": "Charlotte Evans",
+                "review": "Best carpet cleaning service I’ve tried! The deep cleaning removed years of dirt, and my home feels fresher.",
+                "rating": 5
+            }
+        ]
+    },
+    {
+        "name": "Post-Construction Cleaning",
+        "subtitle": "Thorough Post-Construction Cleaning for a Dust-Free, Move-In Ready Space",
+        "introTitle": "Post-Construction Cleaning Services",
+        "intro": "Renovations and new construction projects can leave behind a mess of dust, debris, and residue. At Cleanse Guru, we specialize in post-construction cleaning services to transform your space from a work zone to a spotless, move-in-ready environment. Our highly trained professionals use industry-grade equipment and eco-friendly cleaning solutions to remove fine dust, clean surfaces, and eliminate construction waste efficiently. Whether it’s a residential renovation or a large commercial project, we customize our services to meet your specific needs, ensuring a clean, fresh, and safe space for occupancy.",
+        "serviceTitle": "Why Choose Our Post-Construction Cleaning Services?",
+        "service": "Construction dust and debris can pose health risks and leave your space looking unfinished. Our post-construction cleaning service is designed to tackle heavy-duty messes, including deep dust removal, adhesive and paint residue cleanup, and detailed sanitation of all surfaces. We use HEPA-filter vacuums, high-powered equipment, and professional-grade techniques to ensure your home or business is completely dust-free and ready for use. Whether you need a quick final cleanup or a comprehensive deep cleaning, our team ensures your newly renovated or constructed space is pristine, safe, and welcoming.",
+        "listTitle": "How to Choose the Right Post-Construction Cleaning Service",
+        "list": [
+            {
+                "title": "Evaluate Your Cleaning Requirements",
+                "desc": [
+                    "Assess the level of post-construction mess, including dust, debris, and stains.",
+                    "Determine whether you need a standard cleanup or a deep-cleaning service.",
+                    "Identify areas that require extra attention, such as windows, floors, or fixtures."
+                ]
+            },
+            {
+                "title": "Choose a Professional Post-Construction Cleaning Service",
+                "desc": [
+                    "Select a cleaning company with experience in post-construction cleanup.",
+                    "Ensure the company uses high-quality equipment and follows safety protocols.",
+                    "Compare service packages to find one that fits your timeline and budget."
+                ]
+            },
+            {
+                "title": "Understand the Cleaning Process",
+                "desc": [
+                    "Ask about dust removal techniques, including HEPA-filter vacuuming and air purification.",
+                    "Confirm whether they handle debris disposal and waste management.",
+                    "Ensure all surfaces, including walls, floors, and windows, are thoroughly cleaned."
+                ]
+            },
+            {
+                "title": "Prepare for the Cleaning Service",
+                "desc": [
+                    "Ensure construction work is fully completed before scheduling the cleaning service.",
+                    "Move fragile items or cover furniture to prevent dust contamination.",
+                    "Discuss access requirements and cleaning timeframes with the service provider."
+                ]
+            },
+            {
+                "title": "Review Service Agreement & Quality Assurance",
+                "desc": [
+                    "Check if the service includes a final walkthrough to ensure all areas are cleaned.",
+                    "Confirm pricing details and additional charges for extensive cleaning tasks.",
+                    "Ensure the company offers a satisfaction guarantee or re-cleaning policy."
+                ]
+            }
+        ],
+        "images": [
+            {
+                "src": "/assets/images/services/hc-1.png",
+                "alt": "Professional cleaner wiping down a modern kitchen counter"
+            },
+            {
+                "src": "/assets/images/services/hc-2.png",
+                "alt": "Neat and tidy living room with freshly cleaned surfaces"
+            },
+            {
+                "src": "/assets/images/services/hc-3.png",
+                "alt": "Cleaning professional vacuuming a bright and spacious apartment"
+            }
+        ],
+        "latestreviews": [
+            {
+                "name": "Daniel Cooper",
+                "review": "Amazing service! They removed all the dust and debris from my newly renovated home. Highly recommend!",
+                "rating": 5
+            },
+            {
+                "name": "Sophia White",
+                "review": "Very professional team. They cleaned every corner, even removing paint residue from my floors and windows.",
+                "rating": 4
+            },
+            {
+                "name": "Benjamin Harris",
+                "review": "Exceptional cleaning service! My office looked brand new after construction, thanks to their thorough cleanup.",
+                "rating": 5
+            }
+        ]
+    }
+]

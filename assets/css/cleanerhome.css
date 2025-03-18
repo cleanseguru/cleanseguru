@@ -1,0 +1,25 @@
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+.carousel-bg {
+    background-image: url(/assets/images/main/dashbg.png);
+    height: 25vw;
+    background-size: contain;
+}
+
+
+#carousel-title {
+    margin-left: 5vw;
+    color: white;
+    font-size: 6vw;
+}
+#review-title {
+    margin-left: 5vw;
+    color: white;
+    font-size: 4vw;
+}
+#carousel-title>span>span{
+    font-size: 3vw;
+
+}
