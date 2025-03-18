@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Confirmation</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/BookingConfirm.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <div style="display: flex; justify-content: center;">
+      <div class="profile-img">
+        <img src="../assets/images/main/vacuum-cleaner.svg" alt="cleaner profile picture" class="profile-pic"/>
+        <img src="../assets/images/main/HeartVector.svg" alt="heart button" class="heart-button" />
+      </div>
+    </div>
+    <section>
+      <div class="two-sides">
+        <ul>
+          <li>Yovonoo, Yvone</li>
+          <li>Right Spread, Accra</li>
+          <li>¢40.00 pph</li>
+        </ul>
+        <ul>
+          <li>&#9733;4.91</li>
+        </ul>
+      </div>
+      <div class="two-sides second" style="align-items: start; font-weight: 700;">
+        <ul>
+          <li>Room Cleaning</li>
+          <li>Office Cleaning</li>
+        </ul>
+        <ul>
+          <li>
+            Monday-Friday
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="container text-center font-bold">
+        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 booktime">
+          <div class="col-lg-4 col-sm-6">
+            <label for="Day">Day</label>
+            <select class="form-select font-bold mb-m" aria-label="Day">
+              <option value="Monday">Monday</option>
+              <option value="Tuesday">Tuesday</option>
+              <option value="Wednesday">Wednesday</option>
+              <option value="Thursday">Thursday</option>
+              <option value="Friday">Friday</option>
+              <option value="Saturday">Saturday</option>
+              <option value="Sunday">Sunday</option>
+            </select>
+            <label for="Frequent">Frequent</label>
+            <select class="form-select font-bold" aria-label="Frequent">
+              <option selected>One-Time</option>
+              <option value="Weekly">Weekly</option>
+              <option value="Monthly">Monthly</option>
+            </select>
+            <label for="">Hours</label>
+            <select class="form-select font-bold" id="hours"></select>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <label for="arrival">Time</label>
+            <select class="form-select font-bold" id="arrival"></select>
+            <label for="service-type">Service Type</label>
+            <select class="form-select font-bold">
+              <option value="house-cleaning">House Cleaning</option>
+              <option value="office-cleaning">Office Cleaning</option>
+            </select>
+          </div>
+          <div class="col-lg-4 col-sm-12">
+            <label for="add-notes" style="display: block">Add Note</label>
+            <textarea name="Notes" class="add-notes" cols="30" rows="3" placeholder="Enter notes here..."></textarea>
+          </div>
+      </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 booktime">
+        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1">
+          <label for="payment-options">PAYMENT OPTION</label>
+          <select class="form-select font-bold">
+            <option class="add-notes" value="MTN">MTN MOBILE MONEY</option>
+            <option class="add-notes" value="Telecel">TELECEL CASH</option>
+            <option class="add-notes" value="AIRTELTIGO">AIRTELTIGO CASH</option>
+          </select>
+          <input name="billing-account" id="billing-account" placeholder="DEFAULT BILLING ACCOUNT" class="billing"/>
+          <input name="verification-code" id="verification-code" placeholder="ENTER VERIFICATION CODE" class="billing"/>
+        </div>
+      </div>
+    </section>
+    <div>
+      <button class="book-now">Book Now</button>
+    </div>
+  </main>
+  <script src="../assets/js/BookingConfirm.js"></script>
+</body>
+</html>
