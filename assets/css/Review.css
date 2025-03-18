@@ -1,0 +1,88 @@
+body {
+  padding: 70px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.image {
+  height: 200px;
+}
+
+.stats {
+  flex-direction: column;
+  justify-content: end;
+  width: 220px;
+  justify-self: end;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.progress {
+  --bs-progress-bar-bg: black;
+}
+
+.star-rating {
+  width: 20px;
+  font-size: 14px;
+}
+
+.margin-left {
+  width: 50px;
+  text-align: right;
+}
+ .rating-display {
+  width: 100%;
+  max-width: 900px;
+  flex: 1;
+}
+
+.review-average {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+#review-statement {
+  width: 500px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  border: 1px solid #E5E0DB;
+  padding: 10px;
+  transition: ease-in 0.3s;
+  -webkit-transition: ease-in 0.3s;
+  -moz-transition: ease-in 0.3s;
+  -ms-transition: ease-in 0.3s;
+  -o-transition: ease-in 0.3s;
+}
+
+#review-statement:focus {
+  outline: none;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.btn {
+  width: 400px;
+  justify-self: center;
+}
+
+.rating-content {
+  justify-content: center;
+  justify-self: center;
+  align-self: center;
+  padding-left: auto;
+  padding-right: auto;
+}
+
+.rating-content textarea {
+  justify-self: center;
+  align-self: center;
+}
+
+.section {
+  max-width: 1050px;
+  flex: 1;
+}

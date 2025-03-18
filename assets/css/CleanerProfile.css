@@ -1,0 +1,131 @@
+body {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.j-center{
+  display: flex;
+  flex-direction: column;
+}
+
+.j-center p {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.import-image {
+  height: 100px;
+  width: 100px;
+  width: auto;
+  max-width: 350px;
+  min-width: 200px;
+  height: auto;
+  max-height: 500px;
+  min-height: 350px;
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  position: relative;
+}
+
+.edit-image {
+  position: absolute;
+  z-index: 2;
+  justify-self: end;
+  margin: 20px;
+  width: auto;
+  max-width: 50px;
+  min-width: 20px;
+  height: auto;
+  max-height: 100px;
+  min-height: 30px;
+}
+
+.img {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+input#profile-picture {
+  display: none;
+}
+
+.label-color label {
+  color: #2D8FCE
+}
+
+.label-color{
+  color: #2D8FCE
+}
+
+.dark-label {
+  color: #848080
+}
+
+.logout-btn {
+  display: flex;
+  margin-top: 7px;
+}
+
+.select-width {
+  max-width: 480px;
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+.form-control::placeholder {
+  color :#848080
+}
+
+.form-control {
+  margin-bottom: -10px;
+}
+.form-control{
+  margin-left: 5px;
+}
+.notification label {
+  font-size: 14px;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  color: #848080;
+}
+
+.two-sides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+  max-width: 700px;
+}
+
+.foot-text {
+  width: 100%;
+}
+
+.full-flex {
+  flex: 1;
+}
+
+.horizontal-rule {
+  border-left: 1.5px solid #DED7D7;
+  height: 100%;
+  padding-left: 10px;
+  min-height: 500px;
+}
+
+.a-start {
+  align-items: start;
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cleaner Profile</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/CleanerProfile.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <section>
+    <p><b>&#9733; 4.8</b></p>
+    <form action="">
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2">
+        <div class="label-color margin-bottom" style="max-width: 390px;">
+          <label for="profile-picture">
+            <div class="j-center">
+              <p>PROFILE PICTURE</p>
+              <div class="img">
+                <img src="../assets/images/main/edit-photo.svg" class="edit-image">
+                <img src="../assets/images/main/vacuum-cleaner.svg" class='import-image'>
+              </div>
+            </div>
+          </label>
+          <input type="file" name="Profile Picture" id="profile-picture" accept="image/*" />
+        </div>
+        <div class="label-color col" style="max-width: 490px;">
+          <label for="fullname">FULL NAME</label><br />
+          <input class="form-control select-width" type="text" name="full name" id="fullname" placeholder="eg. John Doe" required /><br />
+          <label for="email">EMAIL ADDRESS</label><br />
+          <input class="form-control select-width" type="email" name="Email" id="email" placeholder="eg. johndoe@email.com" required><br />
+          <label for="phone" title='Please enter valid phone number'>PHONE NUMBER</label><br />
+          <input class="form-control select-width" type="tel" name="phone" id="phone" pattern='^?:(\+233|0)[2356789]/d{8}$' required/><br />
+          <label for="password" title='Enter password you want to use'>PASSWORD</label><br />
+          <input class="form-control select-width" type="password" name="password" id="password" required/><br />
+          <label for="confirmPassword" title='Confirm'>CONFIRM PASSWORD</label><br />
+          <input class="form-control select-width" type="password" name="password" id="confirmPassword" required/><br />
+        </div>
+      </div>
+      <div style="margin-top: 18px;" class="margin-bottom ">
+        <div class="label-color margin-bottom">
+          <label for="language">LANGUAGE</label>
+          <select class="form-select select-width margin-bottom">
+            <option value="English">ENGLISH</option>
+          </select>
+          <label for="location">LOCATION</label><br />
+          <input class="form-control select-width" type="text" name="city" id="city" placeholder="City" required/><br />
+          <input class="form-control select-width" type="text" name="state" id="state" placeholder="State" required/><br />
+          <input class="form-control select-width" type="text" name="country" id="country" placeholder="Country" required/><br />
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3" style="max-width: 800px;">
+          <div class="notification margin-bottom">
+            <label class="label-color" style="font-size: medium;" for="notification" >NOTIFICATIONS</label><br />
+            <div class="flex">
+              <input type="radio" name="switch" id="on">
+              <label style="margin-left: 8px;" for="on">ON</label><br />
+            </div>
+            <div class="flex">
+              <input type="radio" name="switch" id="off">
+              <label style="margin-left: 8px;" for="off">OFF</label>
+            </div>
+          </div>
+          <div class="margin-bottom">
+            <label for="service-offered" class="label-color" style="margin-bottom: 8px;">SERVICE OFFERED</label><br />
+            <div class="flex" style="margin-bottom: 2px;" >
+              <input type="checkbox" name="one-time" id="one-time">
+              <label style="margin-left: 8px;" for="one-time">One-Time</label><br />
+            </div>
+            <div class="flex" style="margin-bottom: 2px;">
+              <input type="checkbox" name="Weekly" id="weekly">
+              <label style="margin-left: 8px;" for="weekly">Weekly</label><br />
+            </div>
+            <div class="flex" style="margin-bottom: 2px;">
+              <input type="checkbox" name="Monthly" id="monthly">
+              <label style="margin-left: 8px;" for="monthly">Monthly</label>
+            </div>
+          </div>
+          <div class="margin-bottom">
+            <label for="experience" class="label-color" style="margin-bottom: 8px;">YEARS OF EXPERIENCE</label><br />
+            <input type="radio" name="offer" id="below-average">
+            <label for="below-average">Less than 1 year</label><br />
+            <input type="radio" name="offer" id="average">
+            <label for="average">1 - 3 years</label><br />
+            <input type="radio" name="offer" id="above-average">
+            <label for="above-average">3 - 10 years</label>
+          </div>
+        </div>
+      </div>
+      <div class="two-sides">
+        <div>
+          <label for="profit" class="label-color" style="margin-bottom: 8px;">PROFIT PER HOUR</label>
+          <select class="form-select" id="profit-an-hour"></select>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">SAVE CHANGES</button>
+          <button class="btn btn-secondary logout-btn">LOGOUT &nbsp;<img src="../assets/images/main/logout-1-white.svg" alt="logout image" /></button>
+        </div>
+      </div>
+    </form>
+  </section>
+  <hr />
+  <section class="flex foot-text a-start">
+    <div class="full-flex  margin-bottom">
+      <p class="label-color">BOOKING HISTORY</p>
+      <p>NO BOOKING HISTORY</p>
+    </div>
+    <div class="full-flex horizontal-rule  margin-bottom";>
+      <p class="label-color">SAVED CLIENTS</p>
+      <p>NO SAVED CLIENTS</p>
+    </div>
+  </section>
+  <script src="../assets/js/CleanerProfile.js"></script>
+</body>
+</html>
