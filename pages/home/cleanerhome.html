@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaner Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <title>Home</title>
+    <link rel="stylesheet" href="/assets/css/cleanerhome.css">
+    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
+
+    <!-- FullCalendar CSS & JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <script src="/assets/js/cleanerhome.js"></script>
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand mx-2" href="#">
+                <img src="/assets/images/main/logo.png" alt="Logo" height="30">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-primary" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleSlidesOnly" class="carousel slide w-100 pb-2 bg-primary" data-bs-ride="carousel">
+        <div id="c-item" class="carousel-inner w-100 carousel-bg">
+            <div class="carousel-item active h-100 align-content-center">
+                <h3 id="carousel-title" class="fw-bold text-white"> Welcome </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-4">
+        <div class="row justify-content-evenly">
+            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px;">
+                <div id="calendar"></div>
+
+            </div>
+            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px; background-color: red;">
+                One of three columns
+            </div>
+            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px; background-color: green;">
+                One of three columns
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

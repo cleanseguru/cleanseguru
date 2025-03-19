@@ -1,0 +1,155 @@
+body {
+  padding: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+.profile-img {
+  width: auto;
+  max-width: 500px;
+  min-width: 200px;
+  height: auto;
+  max-height: 500px;
+  min-height: 200px;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  padding: 10px;
+}
+
+.profile-pic {
+  position: relative;
+  border-radius: 8px;
+  width: auto;
+  max-width: 500px;
+  min-width: 200px;
+  height: auto;
+  max-height: 500px;
+  min-height: 200px;
+}
+
+.heart-button {
+  position: absolute;
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0px;
+}
+
+.two-sides {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.second {
+  margin-top: -15px;
+}
+
+div.booktime {
+  justify-items: start;
+  text-align: left;
+}
+ .dropdown-btn {
+  color: black;
+  background-color: white;
+  border-radius: 0;
+  padding: 5px;
+  width: 80%;
+  text-align: left;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.mb-m {
+  margin-bottom: 8px;
+}
+
+select#timing option {
+  font-weight: bold;
+}
+
+.input-box-size {
+  width:100px;
+  height:50px;
+}
+
+.add-notes {
+  width: 216px;
+  padding: 10px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: 0.2s;
+  -webkit-border-radius: var(--bs-border-radius);
+  -moz-border-radius: var(--bs-border-radius);
+  -ms-border-radius: var(--bs-border-radius);
+  -o-border-radius: var(--bs-border-radius);
+}
+input::placeholder {
+  font-weight: bold;
+}
+.add-notes:focus {
+  outline: 0;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.billing {
+  padding: 10px;
+  border: var(--bs-border-width) solid var(--bs-border-color);
+  border-radius: var(--bs-border-radius);
+  width: 216px;
+  height: 38px;
+  max-width: 410px;
+  flex: 1;
+  margin-top: 8px;
+  -webkit-border-radius: var(--bs-border-radius);
+  -moz-border-radius: var(--bs-border-radius);
+  -ms-border-radius: var(--bs-border-radius);
+  -o-border-radius: var(--bs-border-radius);
+}
+
+.billing:focus {
+  outline: 0;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.book-now {
+  border: none;
+  color: white;
+  background-color: #2a8ecd;
+  padding: 5px 13px;
+  margin-top: 15px;
+  transition:  ease-in 0.1s;
+  -webkit-transition:  ease-in 0.1s;
+  -moz-transition:  ease-in 0.1s;
+  -ms-transition:  ease-in 0.1s;
+  -o-transition:  ease-in 0.1s;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+}
+.book-now:hover{
+  opacity: 0.8;
+}
+.book-now:active {
+  opacity: 0.98;
+}

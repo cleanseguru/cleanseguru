@@ -35,7 +35,6 @@ const countries = [
     "Wallis and Futuna", "Western Sahara", "Yemen", "Zambia", "Zimbabwe"
 ];
 
-// Function to populate the select element with country options
 function populateCountryOptions() {
     const selectElement = document.getElementById("countrySelect");
     countries.forEach(country => {
@@ -46,38 +45,48 @@ function populateCountryOptions() {
     });
 }
 
-// Function to toggle visibility of sections based on role selection
 function toggleSections() {
     const clientRadio = document.getElementById("flexRadioDefault1");
     const cleanerRadio = document.getElementById("flexRadioDefault2");
     const servicesSection = document.getElementById("servicesSection");
     const experienceSection = document.getElementById("experienceSection");
     const idCardSection = document.getElementById("idCardSection");
-    clientRadio.checked = true;
-    servicesSection.style.display = "none";
-    experienceSection.style.display = "none";
-    idCardSection.style.display = "none";
 
+    function setDisplayStyle(displayStyle) {
+        servicesSection.style.display = displayStyle;
+        experienceSection.style.display = displayStyle;
+        idCardSection.style.display = displayStyle;
+    }
+
+    clientRadio.checked = true;
+    setDisplayStyle("none");
 
     clientRadio.addEventListener("change", () => {
         if (clientRadio.checked) {
-            servicesSection.style.display = "none";
-            experienceSection.style.display = "none";
-            idCardSection.style.display = "none";
+            setDisplayStyle("none");
         }
     });
 
     cleanerRadio.addEventListener("change", () => {
         if (cleanerRadio.checked) {
-            servicesSection.style.display = "block";
-            experienceSection.style.display = "block";
-            idCardSection.style.display = "block";
+            setDisplayStyle("block");
         }
     });
 }
 
-// Call the functions to populate the select element and toggle sections when the DOM is fully loaded
+function phonenumbervalidator() {
+    const phoneInput = document.getElementById("phoneInput");
+    phoneInput.addEventListener("input", function (event) {
+        const value = this.value;
+        const phonePattern = /^\+?[1-9]\d{1,14}$/;
+        if (!phonePattern.test(value)) {
+            this.setCustomValidity("Please enter a valid phone number.");
+        }
+    });
+}
+    
 document.addEventListener("DOMContentLoaded", () => {
     populateCountryOptions();
     toggleSections();
+    phonenumbervalidator();
 });
