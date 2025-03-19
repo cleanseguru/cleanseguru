@@ -9,15 +9,19 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
-    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="/assets/css/signin.css">
-    <script src="/assets/js/signin.js"></script>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/signin.css">
+    <!--<script src="../assets/js/signin.js"></script>-->
+    
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-auth-compat.js"></script>
+    <script src="../backend/signin.js" defer></script>
 </head>
 
 <body>
     <main>
-        <div id="image"><img src="/assets/images/main/branded_bg.png"></div>
+        <div id="image"><img src="../assets/images/main/branded_bg.png"></div>
         <div id="signup-form" class="py-4 align-self-center">
             <h1 class="d-flex justify-content-center fw-bold">SIGN IN</h1>
             <h5 class="d-flex justify-content-center align-items-center">Welcome to&nbsp; <small
@@ -40,7 +44,7 @@
                 </div>
 
                 <div class="d-flex justify-content-center">
-                    <button type="submit" class="btn btn-primary w-50">Submit</button>
+                    <button type="submit" id="submitbtn" class="btn btn-primary w-50">Submit</button>
                 </div>
             </form>
         </div>
