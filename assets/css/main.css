@@ -17,13 +17,6 @@
     font-weight: normal;
 }
 
-/* 
-r =1.40316
-w= 100vw
-h= 100vw /1.40316
-ha=w
-
- */
 
 #hero-text span {
     font-size: 2em;
@@ -64,7 +57,7 @@ ha=w
 }
 
 #first-content img,
-section3-content img,
+.section3-content img,
 #section2-content img {
     width: 100%;
     height: auto;
@@ -102,7 +95,7 @@ body {
     color: white;
 }
 
-#section3-item  {
+#section3-item {
     padding: 10px;
     color: white;
 }
@@ -113,7 +106,8 @@ body {
     border-bottom-style: solid;
 }
 
-#section3-item span {
+#section3-item span,
+#section3-item-2 span {
     font-weight: bold;
     font-size: calc((1.5*(100vw /(1.40316)))/40);
 

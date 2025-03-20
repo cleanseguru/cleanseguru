@@ -1,5 +1,4 @@
 body {
-  padding: 30px;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -11,7 +10,7 @@ body {
   align-items: center;
 }
 
-.j-center{
+.j-center {
   display: flex;
   flex-direction: column;
 }
@@ -65,7 +64,7 @@ input#profile-picture {
   color: #2D8FCE
 }
 
-.label-color{
+.label-color {
   color: #2D8FCE
 }
 
@@ -87,15 +86,17 @@ input#profile-picture {
 }
 
 .form-control::placeholder {
-  color :#848080
+  color: #848080
 }
 
 .form-control {
   margin-bottom: -10px;
 }
-.form-control{
+
+.form-control {
   margin-left: 5px;
 }
+
 .notification label {
   font-size: 14px;
 }

@@ -1,0 +1,89 @@
+<div>
+    <div style="display: flex; justify-content: center;">
+        <div class="profile-img">
+            <img src="profileimageurl" alt="cleaner profile picture" class="profile-pic" />
+            <!-- <img src="/assets/images/main/HeartVector.svg" alt="heart button" class="heart-button" /> -->
+        </div>
+    </div>
+    <section>
+        <div class="two-sides">
+            <ul>
+                <li>CleanerName</li>
+                <li>CleanerLocation</li>
+                <li>¢CleanerPrice pph</li>
+            </ul>
+            <ul>
+                <li>&#9733;CleanerRating</li>
+            </ul>
+        </div>
+        <!-- <div class="two-sides second" style="align-items: start; font-weight: 700;">
+            <ul>
+                <li>Room Cleaning</li>
+                <li>Office Cleaning</li>
+            </ul>
+            <ul>
+                <li>
+                    Monday-Friday
+                </li>
+
+            </ul>
+        </div> -->
+    </section>
+    <section>
+        <div class="container text-center">
+            <div class="row row-cols-2 row-cols-sm-2 row-cols-md-3 booktime">
+                <div class="col-lg-4 col-sm-6">
+                    <label class="text-primary text-uppercase" for="Day">Day</label>
+                    <select class="form-select mb-m" aria-label="Day">
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                        <option value="Sunday">Sunday</option>
+                    </select>
+                    <label class="text-primary text-uppercase" for="Frequent">Frequent</label>
+                    <select class="form-select " aria-label="Frequent">
+                        <option selected>One-Time</option>
+                        <option value="Weekly">Weekly</option>
+                        <option value="Monthly">Monthly</option>
+                    </select>
+                    <label class="text-primary text-uppercase" for="">Hours</label>
+                    <select class="form-select" id="hours"></select>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                    <label class="text-primary text-uppercase" for="arrival">Time</label>
+                    <select class="form-select" id="arrival"></select>
+                    <label class="text-primary text-uppercase" for="service-type">Service Type</label>
+                    <select id="specializedservices" class="form-select">
+                        <!-- <option value="house-cleaning">House Cleaning</option>
+                        <option value="office-cleaning">Office Cleaning</option> -->
+                    </select>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <label for="add-notes" style="display: block">Add Note</label>
+                    <textarea name="Notes" class="add-notes" cols="30" rows="3"
+                        placeholder="Enter notes here..."></textarea>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 booktime">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1">
+                    <label class="text-primary text-uppercase" for="payment-options">PAYMENT OPTION</label>
+                    <select class="form-select">
+                        <option class="add-notes" value="MTN">MTN MOBILE MONEY</option>
+                        <option class="add-notes" value="Telecel">TELECEL CASH</option>
+                        <option class="add-notes" value="AIRTELTIGO">AIRTELTIGO CASH</option>
+                    </select>
+                    <!-- <input name="billing-account" id="billing-account" placeholder="DEFAULT BILLING ACCOUNT"
+                        class="billing" />
+                    <input name="verification-code" id="verification-code" placeholder="ENTER VERIFICATION CODE"
+                        class="billing" /> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div>
+        <button class="book-now">Book Now</button>
+    </div> -->
+</div>

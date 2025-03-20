@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +11,20 @@
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Home</title>
     <link rel="stylesheet" href="/assets/css/clienthome.css">
-    <script src="/assets/js/clenthome.js"></script>
+    <link rel="stylesheet" href="/assets/css/ClientProfile.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
+    <script src="/assets/js/clienthome.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadfooter(document);
+        });
+    </script>
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand mx-2" href="#">
@@ -29,10 +38,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#calendarModal">View Calendar</a>
                     </li>
                 </ul>
 
@@ -42,6 +51,7 @@
                 </form>
             </div>
         </div>
+
     </nav>
     <div id="carouselExampleSlidesOnly" class="carousel slide w-100 pb-2 bg-primary" data-bs-ride="carousel">
         <div id="c-item" class="carousel-inner w-100 carousel-bg">
@@ -76,6 +86,39 @@
         <div class="border rounded" data-coreui-calendars="2" data-coreui-locale="en-US" data-coreui-toggle="calendar">
         </div>
     </div>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div onclick="" class="modal-body">
+                    <div id="profilebody"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="calendarModalLabel">Calendar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div onclick="" class="modal-body">
+                    <div id="calendarbody" style="height: 800px"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+<footer></footer>
 
 </html>

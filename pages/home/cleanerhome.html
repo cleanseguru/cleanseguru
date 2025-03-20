@@ -13,14 +13,16 @@
     <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
     <title>Home</title>
     <link rel="stylesheet" href="/assets/css/cleanerhome.css">
-    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script> -->
-
-    <!-- FullCalendar CSS & JS -->
-    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.15/index.global.min.js"></script>
+    <link rel="stylesheet" href="/assets/css/CleanerProfile.css">
+    <link rel="stylesheet" href="https://uicdn.toast.com/calendar/latest/toastui-calendar.min.css" />
+    <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
     <script src="/assets/js/cleanerhome.js"></script>
-
+    <script src="/assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            loadfooter(document);
+        });
+    </script>
 
 </head>
 
@@ -38,11 +40,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Profile</a>
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About Us</a>
-                    </li>
+
                 </ul>
                 <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -58,21 +58,158 @@
             </div>
         </div>
     </div>
+    <h3 class="calender-text">Events Calender</h3>
+    <div id="calendar" style="height: 800px"></div>
+    <h3 class="calender-text">New Requests</h3>
 
-    <div class="m-4">
+    <div class="container-fluid">
+        <div class="row overflow-x-auto flex-nowrap mx-3">
+            <div class="card me-3" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/images/main/bubble.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">House Cleaning</h5>
+                    <p class="card-text">Notes here</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Date:</span> 12th December, 2024 <br> <span class="fw-bold">Time:</span>
+                        3:00 PM
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Name:</span> Francis Kudjo <br><span class="fw-bold">Location:</span>
+                        Kumasi
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Frequency:</span> Weekly <br><span class="fw-bold">Price:</span> GH₵ 50.00
+
+                    </li>
+                </ul>
+                <div class="card-body d-flex justify-content-evenly">
+                    <a href="#" class="card-link btn btn-outline-danger">Decline</a>
+                    <a href="#" class="card-link btn btn-outline-success">Accept</a>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="/assets/images/main/bubble.png" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title fw-bold">House Cleaning</h5>
+                    <p class="card-text">Notes here</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Date:</span> 12th December, 2024 <br> <span class="fw-bold">Time:</span>
+                        3:00 PM
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Name:</span> Francis Kudjo <br><span class="fw-bold">Location:</span>
+                        Kumasi
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Frequency:</span> Weekly <br><span class="fw-bold">Price:</span> GH₵ 50.00
+
+                    </li>
+                </ul>
+                <div class="card-body d-flex justify-content-evenly">
+                    <a href="#" class="card-link btn btn-outline-danger">Decline</a>
+                    <a href="#" class="card-link btn btn-outline-success">Accept</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="m-4 px-3">
         <div class="row justify-content-evenly">
-            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px;">
-                <div id="calendar"></div>
+            <div class="col-md newboxes border border-2 rounded-3 text-center">
+                <h3 class="calender-text fs-6">Total Earnings</h3>
+                <div class="flex-column justify-content-center m-3 align-content-center">
+                    <h1 class="text-center fw-bold text-danger">GH₵ 500.00</h1>
+                    <h4>Balance</h4>
+                    <h4 class="fs-6 text-secondary">Last Payment: 12th December, 2024</h4>
+                </div>
+                <div class="container mb-4">
+                    <div class="row">
+                        <div class="col-6 fs-6 fw-bold text-start">
+                            Income:
+                        </div>
+                        <div class="col-6 fs-6 text-start">
+                            ₵425.00
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 fs-6 fw-bold text-start">
+                            Tips and Bonuses:
+                        </div>
+                        <div class="col-6 fs-6 text-start">
+                            ₵75.00
+                        </div>
+                    </div>
+                </div>
 
             </div>
-            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px; background-color: red;">
-                One of three columns
+            <div class="col-md newboxes border border-2 rounded-3 text-start">
+                <h3 class="calender-text fs-6 text-center">Withdraw Cash</h3>
+                <form>
+
+                    <div class="mb-3">
+                        <label for="amountInput" class="form-label text-uppercase text-primary">Enter Amount</label>
+                        <input type="number" class="form-control" id="amountInput" aria-describedby="amountHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="phoneInput" class="form-label text-uppercase text-primary">Enter Phone
+                            Number</label>
+                        <input type="tel" class="form-control" id="phoneInput" pattern="[0-9]{10}" required>
+                    </div>
+                    <div class="d-flex mb-3 flex-wrap">
+                        <div class="form-check me-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                                checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                MTN Mobile Money
+                            </label>
+                        </div>
+                        <div class="form-check me-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Telecel Cash
+                            </label>
+                        </div>
+                        <div class="form-check me-4">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                            <label class="form-check-label" for="flexRadioDefault3">
+                                AirtelTigo Cash
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+
             </div>
-            <div class="col-sm m-3" style="aspect-ratio: 1; width: 300px; background-color: green;">
+            <!-- <div class="col-md  newboxes" style=" background-color: green;">
                 One of three columns
+            </div> -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="profilebody"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
             </div>
         </div>
     </div>
 </body>
+<footer></footer>
 
 </html>

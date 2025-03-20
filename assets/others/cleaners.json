@@ -1,0 +1,114 @@
+[
+    {
+        "name": "Youvonne Twim",
+        "rate": 79,
+        "location": "Right Spread, Accra",
+        "rating": 4.5,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Carpet Cleaning"
+        ]
+    },
+    {
+        "name": "John Doe",
+        "rate": 65,
+        "location": "East Legon, Accra",
+        "rating": 4.8,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "Office Cleaning",
+            "Post-Construction Cleaning"
+        ]
+    },
+    {
+        "name": "Jane Smith",
+        "rate": 50,
+        "location": "Osu, Accra",
+        "rating": 4.2,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Post-Construction Cleaning"
+        ]
+    },
+    {
+        "name": "Michael Brown",
+        "rate": 70,
+        "location": "Tema, Accra",
+        "rating": 4.7,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "Carpet Cleaning",
+            "Office Cleaning"
+        ]
+    },
+    {
+        "name": "Emily Davis",
+        "rate": 55,
+        "location": "Spintex, Accra",
+        "rating": 4.3,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Carpet Cleaning",
+            "Office Cleaning"
+        ]
+    },
+    {
+        "name": "Sophia Wilson",
+        "rate": 60,
+        "location": "Airport Residential, Accra",
+        "rating": 4.6,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Office Cleaning"
+        ]
+    },
+    {
+        "name": "Daniel Osei",
+        "rate": 75,
+        "location": "Dzorwulu, Accra",
+        "rating": 4.9,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "Post-Construction Cleaning",
+            "Carpet Cleaning"
+        ]
+    },
+    {
+        "name": "Grace Mensah",
+        "rate": 58,
+        "location": "Achimota, Accra",
+        "rating": 4.4,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Carpet Cleaning"
+        ]
+    },
+    {
+        "name": "Kwame Boateng",
+        "rate": 80,
+        "location": "Cantonments, Accra",
+        "rating": 4.7,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "Office Cleaning",
+            "Post-Construction Cleaning"
+        ]
+    },
+    {
+        "name": "Abena Asante",
+        "rate": 65,
+        "location": "Madina, Accra",
+        "rating": 4.5,
+        "image": "https://www.qualify.edu.au/wp-content/uploads/2022/11/10-23-CleaningOperations-Header-Image-1-scaled-2.png",
+        "specializations": [
+            "House Cleaning",
+            "Office Cleaning",
+            "Carpet Cleaning"
+        ]
+    }
+]

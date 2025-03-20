@@ -1,7 +1,9 @@
 document.addEventListener("DOMContentLoaded", async function () {
   const services = await fetchServices();
+  loadprofile();
   addServices(services);
   updateServiceContent(services[0]);
+  InitCalender();
 });
 
 async function fetchServices() {
@@ -36,7 +38,6 @@ function addServices(services) {
 function updateServiceContent(service) {
   const textContainers = document.querySelectorAll(".text-container");
   textContainers.forEach((container, index) => {
-    // Clear previous content
     const carouselContainer = document.querySelector("#c-item");
     carouselContainer.innerHTML = "";
 
@@ -84,7 +85,7 @@ function updateServiceContent(service) {
     bookButton.innerHTML = "Book Now";
     bookButton.className = "btn btn-primary w-20";
     bookButton.addEventListener("click", () => {
-      window.location.href = "/book.html";
+      window.location.href = "/pages/home/cleaners.html";
     });
 
     container.appendChild(bookButton);
@@ -95,3 +96,62 @@ function updateServiceContent(service) {
   });
 }
 
+function loadprofile() {
+  fetch("/pages/home/clientprofile.html")
+    .then((response) => response.text())
+    .then((data) => {
+      document.getElementById("profilebody").outerHTML = data;
+    });
+}
+
+function InitCalender() {
+  var Calendar = tui.Calendar;
+  var newcalendar = new Calendar("#calendarbody", {
+    defaultView: "month",
+    useCreationPopup: true,
+    useDetailPopup: true,
+    calendars: [
+      {
+        id: "1",
+        name: "My Calendar",
+        color: "#ffffff",
+        bgColor: "#03bd9e",
+        dragBgColor: "#03bd9e",
+        borderColor: "#03bd9e",
+      },
+    ],
+  });
+
+  newcalendar.createEvents([
+    {
+      id: "event1",
+      calendarId: "cal2",
+      title: "Weekly meeting",
+      start: new Date(2025, 2, 19, 9, 0, 0), // March is month 2 (0-indexed)
+      end: new Date(2025, 2, 30, 10, 0, 0),
+    },
+    {
+      id: "event2",
+      calendarId: "cal3",
+      title: "Weekly meeting",
+      start: new Date(2025, 2, 19, 10, 0, 0), // March is month 2 (0-indexed)
+      end: new Date(2025, 2, 19, 10, 0, 0),
+    },
+    {
+      id: "event3",
+      calendarId: "cal4",
+      title: "Lunch appointment",
+      start: new Date(2025, 2, 8, 12, 0, 0), // June is month 5 (0-indexed)
+      end: new Date(2025, 2, 8, 13, 0, 0),
+    },
+    {
+      id: "event4",
+      calendarId: "cal5",
+      title: "Vacation",
+      start: new Date(2025, 5, 8), // June is month 5 (0-indexed)
+      end: new Date(2025, 5, 10),
+      isAllday: true,
+      category: "allday",
+    },
+  ]);
+}
