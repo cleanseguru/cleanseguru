@@ -1,0 +1,129 @@
+body {
+    background-image: url("/assets/images/main/dashbg.png");
+}
+
+.overall, .left-side, .right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section {
+    margin-bottom: 0px;
+}
+
+.top-section img {
+    object-fit: fill;
+    overflow: hidden;
+    width: 100%;
+}
+
+.middle-section {
+    display: flex;
+}
+
+.left-side {
+    width: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.job-details-container, .now-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.job-details-container h4, .now-container h4 {
+    letter-spacing: 2px;
+    color: #0d43e3;
+    margin-bottom: 40px;
+}
+
+.progress-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 15;
+    
+}
+
+.progress-background {
+    stroke: #e0e0e0;
+}
+
+.progress-bar-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    gap: 6rem;
+}
+
+.progress-bar {
+    stroke: #0d43e3;
+    stroke-dasharray: 314; /* 2 * π * r (circumference) */
+    stroke-dashoffset: 314;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    font-weight: bold;
+    color: #0d43e3;
+}
+
+.progress-inscription {
+    color: #0d43e3;
+    letter-spacing: 2px;
+    
+}
+
+.now-container ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.now-container ul a, .up-next {
+    text-decoration: none;
+    font-size: 20px;
+    color: gray;
+    transition: all 0.3s ease-in-out;
+}
+
+.now-container ul a:first-child {
+    color: #0d43e3;
+    font-size: 22px;
+}
+
+.now-container ul a:hover {
+    cursor: pointer;
+    color: #0d43e3;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+
+.right-side {
+    background-color: #0d43e3;
+    width: 50%;
+    padding: 5%;
+}
+
+
+

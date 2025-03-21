@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaner Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/cleaner-dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <div class="overall">
+        <div class="top-section">
+           <img src="/assets/images/main/dashTopBg.png">
+        </div>
+
+        <div class="middle-section">
+            <div class="left-side">
+                <div class="job-details-container">
+                    <h4>JOBS DETAILS</h4>
+
+                    <div class="progress-bar-container">
+                        
+                        <div class="completed-jobs">
+                            <div class="progress-item">
+                                <svg width="120" height="120">
+                                    <circle class="progress-background" cx="60" cy="60" r="50" />
+                                    <circle class="progress-bar" cx="60" cy="60" r="50" id="circle1" />
+                                </svg>
+                                <div class="progress-text" id="text1">65/100</div>
+                            </div>
+                            <p class="progress-inscription">Completed Jobs</p>
+                        </div>
+    
+                        <div class="ongoing-jobs-container">
+                            <div class="progress-item">
+                                <svg width="120" height="120">
+                                    <circle class="progress-background" cx="60" cy="60" r="50" />
+                                    <circle class="progress-bar" cx="60" cy="60" r="50" id="circle2" />
+                                </svg>
+                                <div class="progress-text" id="text2">2/100</div>
+                            </div>
+                            <p class="progress-inscription">Ongoing Jobs</p> 
+                        </div>
+    
+                        <div class="pending-jobs-container">
+                            <div class="progress-item">
+                                <svg width="120" height="120">
+                                    <circle class="progress-background" cx="60" cy="60" r="50" />
+                                    <circle class="progress-bar" cx="60" cy="60" r="50" id="circle3" />
+                                </svg>
+                                <div class="progress-text" id="text3">/100</div>
+                            </div>
+                            <p class="progress-inscription">Pending Jobs</p>
+                        </div>
+                    </div>
+               </div>
+               <hr style="width: 100%; height: 1px; color: black;">
+
+               <div class="now-container">
+                    <h4>NOW</h4>
+                    <ul>
+                        <a href="#">
+                            <li>&gt; Office Cleaning, Jecado Office, Gbawe</li>
+                        </a>
+                        <li class="up-next" style="font-weight: 500;">Up Next</li>
+                        <a href="#">
+                            <li>&gt; House Cleaning, Jacob Bush, London</li>
+                        </a>
+                        <a href="#">
+                            <li>&gt; Office Cleaning, JSmith, London</li>
+                        </a>
+                    </ul>
+               </div>
+               <hr style="width: 100%; height: 1px; color: black;">
+               
+
+            </div>
+
+            <div class="right-side">
+               
+            </div>
+        </div>
+    </div>
+    <script>
+        function setProgress(circleId, textId, percent) {
+            const circumference = 2 * Math.PI * 50;
+            const offset = circumference - (percent / 100) * circumference;
+            document.getElementById(circleId).style.strokeDashoffset = offset;
+            document.getElementById(textId).textContent = `${percent}/100`;
+        }
+
+        // Set different progress values
+        setProgress("circle1", "text1", 65);
+        setProgress("circle2", "text2", 2);
+        setProgress("circle3", "text3", 33);
+    </script>
+</body>
+</html>
