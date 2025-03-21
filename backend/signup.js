@@ -101,7 +101,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
     
             // Redirect to appropriate dashboard
-            window.location.href = role === 'client' ? '/pages/client-dashboard.html' : '/pages/cleaner-dashboard.html';
+            window.location.href = role === 'client' ? '../pages/clientpage.html' : '../pages/cleanerpage.html';
     
         } catch (error) {
             console.error('Signup error:', error);

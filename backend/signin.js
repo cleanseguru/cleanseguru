@@ -52,7 +52,7 @@ document.getElementById("submitbtn")
 
         if (response.ok) {
             // Redirect to dashboard or home page
-            window.location.href = '../index.html';//next page
+            window.location.href = '../pages/home/clientpage.html';//next page
         } else {
             throw new Error('Authentication failed');
         }
