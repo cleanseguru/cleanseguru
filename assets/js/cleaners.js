@@ -1,4 +1,5 @@
 let bookinghtml = null;
+let cleanersprofilehtml = null;
 let cleaners = [];
 let selectedFilters = [];
 
@@ -15,6 +16,11 @@ async function fetchCleaners() {
     .then((data) => {
       bookinghtml = data;
     });
+  fetch("/pages/home/cleanersprofileview.html")
+    .then((response) => response.text())
+    .then((data) => {
+      cleanersprofilehtml = data;
+    });
   return response.json();
 }
 function loadCleaners() {
@@ -26,7 +32,6 @@ function showModal(cleaner) {
   if (typeof cleaner === "string") {
     cleaner = JSON.parse(cleaner);
   }
-  console.log(cleaner.specializations);
 
   document.getElementById("bookingbody").innerHTML = bookinghtml
     .replace("CleanerName", cleaner.name)
@@ -34,7 +39,6 @@ function showModal(cleaner) {
     .replace("CleanerPrice", cleaner.rate)
     .replace("CleanerRating", cleaner.rating)
     .replace("profileimageurl", cleaner.image);
-
   const specializedServices = document.getElementById("specializedservices");
   specializedServices.innerHTML = "";
   cleaner.specializations.forEach((specialization) => {
@@ -44,6 +48,14 @@ function showModal(cleaner) {
     specializedServices.appendChild(option);
   });
   loadtime();
+}
+
+function showProfileModal(cleaner) {
+  if (typeof cleaner === "string") {
+    cleaner = JSON.parse(cleaner);
+  }
+
+  document.getElementById("profileview").innerHTML = cleanersprofilehtml;
 }
 
 function loadtime() {
@@ -186,8 +198,11 @@ function renderCleaners(newcleaners) {
   view.innerHTML = ""; // Clear existing content
 
   newcleaners.forEach((element) => {
-    const code = `<div class="w-100 m-2 border p-3 rounded">
-        <img src="${element.image}"
+    const code = `<div class="w-100 m-2 border p-3 rounded"  >
+        <img src="${element.image}" data-bs-toggle="modal"
+                            data-bs-target="#profileviewModal" onclick='showProfileModal(${JSON.stringify(
+                              element
+                            )})'
             class="card-img-top rounded-4" style="aspect-ratio: 1.5; object-fit: cover;" />
         <div class="card-body d-flex flex-column">
             <h5 class="card-title">${element.name}</h5>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleaning Service - CleanseGuru</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css">
+    <script src="/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/main.js"> </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            loadfooter(document);
+        });
+    </script>
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .hero-section {
+            height: 300px;
+            background: url('/assets/images/main/cleaningbg.jpg') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        .newcard:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .why-hire-us {
+            color: white;
+            padding: 50px 20px;
+        }
+
+        .testimonial {
+            padding: 50px 20px;
+        }
+
+        .why-hire-us h2 {
+            font-weight: bold;
+        }
+
+        .why-hire-us .icon-box {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between px-xl-5">
+        <nav class="navbar navbar-light bg-light">
+            <a class="navbar-brand mx-2" href="#">
+                <img src="/assets/images/main/logo.png" width="auto" height="30" alt="">
+            </a>
+        </nav>
+        <nav>
+            <a href="/pages/home/signin.html"><button type="button" class="btn btn-light">Login</button></a>
+            <a href="/pages/home/signup.html"><button type="button" class="btn btn-primary">GET STARTED</button></a>
+        </nav>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="row h-100">
+            <div
+                class="col-12 col-lg-6 bg-primary bg-opacity-50 d-flex flex-column justify-content-center align-items-center text-center">
+                <h1>Welcome to a Cleaner World</h1>
+                <p>Find trusted cleaners or offer your cleaning services with ease</p>
+                <!-- <a href="/pages/signup.html" class="btn btn-lg">Join Now</a> -->
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-4 mb-5 newcard">
+                    <div class="card">
+                        <img src="/assets/images/services/lp-1.jpg" class="card-img-top" alt="Professional">
+                        <div class="card-body">
+                            <h5 class="card-title">Professional</h5>
+                            <p class="card-text">Find experienced and skilled cleaners who deliver high-quality service
+                                with attention to detail.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5 newcard">
+                    <div class="card">
+                        <img src="/assets/images/services/lp-2.jpg" class="card-img-top" alt="Affordable">
+                        <div class="card-body">
+                            <h5 class="card-title">Affordable</h5>
+                            <p class="card-text">Compare prices and choose cleaners that fit your budget without
+                                compromising on quality.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-5 newcard">
+                    <div class="card">
+                        <img src="/assets/images/services/lp-3.jpg" class="card-img-top" alt="Reliable">
+                        <div class="card-body">
+                            <h5 class="card-title">Reliable</h5>
+                            <p class="card-text">Browse verified professionals with real customer reviews to ensure a
+                                trustworthy service.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Hire Us Section -->
+    <section class="why-hire-us bg-primary">
+        <div class="container text-center">
+            <h2>Why Choose Us?</h2>
+            <div class="row mt-4">
+                <div class="col-md-3">
+                    <div class="icon-box"><i class="fas fa-users"></i></div>
+                    <h5>Qualified Cleaners</h5>
+                    <p>Browse a network of skilled and experienced cleaners, each vetted for professionalism and quality
+                        service.</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box"><i class="fas fa-cogs"></i></div>
+                    <h5>Customized Service</h5>
+                    <p>Easily find cleaners who match your specific needs, from deep cleaning to regular maintenance.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box"><i class="fas fa-shield-alt"></i></div>
+                    <h5>Trusted</h5>
+                    <p>All professionals on our platform are vetted and reviewed by previous clients for reliability.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="icon-box"><i class="fas fa-smile"></i></div>
+                    <h5>100% Satisfaction</h5>
+                    <p>Choose the right cleaner for you with confidence, backed by transparent reviews and ratings.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="fw-bold text-primary">What Our Customers Say?</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"CleanseGuru made finding a reliable cleaner so easy! Highly recommend."</p>
+                        <footer class="blockquote-footer">Jane Doe</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"Affordable and professional service. My home has never been cleaner!"</p>
+                        <footer class="blockquote-footer">John Smith</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p>"The reviews helped me choose the perfect cleaner for my needs."</p>
+                        <footer class="blockquote-footer">Emily Johnson</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- How It Works Section -->
+    <section class="py-5 why-hire-us bg-primary">
+        <div class="container text-center">
+            <h2>How It Works</h2>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="icon-box"><i class="fas fa-search"></i></div>
+                    <h5>1. Search</h5>
+                    <p>Find cleaners in your area by browsing our platform.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box"><i class="fas fa-handshake"></i></div>
+                    <h5>2. Compare</h5>
+                    <p>Read reviews, compare prices, and choose the best fit for you.</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="icon-box"><i class="fas fa-check-circle"></i></div>
+                    <h5>3. Book</h5>
+                    <p>Schedule your cleaning service and enjoy a spotless home.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+    </footer>
+
+</body>
+
+</html>

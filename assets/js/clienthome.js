@@ -4,6 +4,8 @@ document.addEventListener("DOMContentLoaded", async function () {
   addServices(services);
   updateServiceContent(services[0]);
   InitCalender();
+  loadfooter(document);
+  initNotification();
 });
 
 async function fetchServices() {
@@ -110,14 +112,16 @@ function InitCalender() {
     defaultView: "month",
     useCreationPopup: true,
     useDetailPopup: true,
+    isReadOnly: true,
+    usageStatistics: false,
+
     calendars: [
       {
         id: "1",
         name: "My Calendar",
-        color: "#ffffff",
-        bgColor: "#03bd9e",
-        dragBgColor: "#03bd9e",
-        borderColor: "#03bd9e",
+        color: "white",
+        borderColor: "blue",
+        backgroundColor: "rgba(38, 0, 255, 0.64)",
       },
     ],
   });
@@ -153,5 +157,58 @@ function InitCalender() {
       isAllday: true,
       category: "allday",
     },
+    {
+      id: "event5",
+      calendarId: "1",
+      title: "Team Building Activity",
+      start: new Date(2025, 3, 15, 14, 0, 0), // April is month 3 (0-indexed)
+      end: new Date(2025, 3, 15, 17, 0, 0),
+    },
   ]);
+
+  calendar = newcalendar;
+
+  document.getElementById("prev-btn").addEventListener("click", function () {
+    calendar.prev(); // Move to previous month
+    updateMonth();
+  });
+
+  document.getElementById("next-btn").addEventListener("click", function () {
+    calendar.next(); // Move to next month
+    updateMonth();
+  });
+
+  document.getElementById("today-btn").addEventListener("click", function () {
+    calendar.today(); // Move to today
+    updateMonth();
+  });
+
+  // View switch buttons
+  document.getElementById("month-view").addEventListener("click", function () {
+    calendar.changeView("month");
+    updateMonth();
+  });
+
+  document.getElementById("week-view").addEventListener("click", function () {
+    calendar.changeView("week");
+    updateMonth();
+  });
+
+  document.getElementById("day-view").addEventListener("click", function () {
+    calendar.changeView("day");
+    updateMonth();
+  });
+}
+function updateMonth() {
+  const date = calendar.getDate(); // Get current date
+  const monthYear = date
+    .toDate()
+    .toLocaleString("default", { month: "long", year: "numeric" });
+  document.getElementById("current-month").innerText = monthYear;
+}
+
+function initNotification(){
+  const notificationdiv = document.getElementById("notificationbody");
+  
+
 }

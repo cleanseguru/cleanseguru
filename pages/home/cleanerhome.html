@@ -18,16 +18,12 @@
     <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
     <script src="/assets/js/cleanerhome.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadfooter(document);
-        });
-    </script>
+
 
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
             <a class="navbar-brand mx-2" href="#">
                 <img src="/assets/images/main/logo.png" alt="Logo" height="30">
@@ -40,14 +36,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a>
+                        <a id="profile-btn" class="nav-link btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a>
                     </li>
-
                 </ul>
-                <form class="d-flex">
+                <!-- <form class="d-flex">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
+                </form> -->
             </div>
         </div>
     </nav>
@@ -59,6 +54,23 @@
         </div>
     </div>
     <h3 class="calender-text">Events Calender</h3>
+    <nav class="navbar navbar-light bg-light bg-transparent">
+        <div class="container-fluid d-flex justify-content-between align-items-center">
+            <div>
+                <button id="prev-btn" class="btn btn-outline-primary">◀ Previous</button>
+                <button id="today-btn" class="btn btn-primary">Today</button>
+                <button id="next-btn" class="btn btn-outline-primary">Next ▶</button>
+            </div>
+
+            <h5 id="current-month" class="mb-0 fw-bold"></h5>
+
+            <div>
+                <button id="month-view" class="btn btn-outline-secondary">Month</button>
+                <button id="week-view" class="btn btn-outline-secondary">Week</button>
+                <button id="day-view" class="btn btn-outline-secondary">Day</button>
+            </div>
+        </div>
+    </nav>
     <div id="calendar" style="height: 800px"></div>
     <h3 class="calender-text">New Requests</h3>
 
@@ -209,7 +221,7 @@
             </div>
         </div>
     </div>
-</body>
-<footer></footer>
+</body><footer></footer>
+
 
 </html>

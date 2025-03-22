@@ -1,5 +1,7 @@
-const calender = null;
+let calendar = null;
 document.addEventListener("DOMContentLoaded", function () {
+  loadfooter(document);
+
   InitCalender();
   fetch("/pages/home/cleanersprofile.html")
     .then((response) => response.text())
@@ -7,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("profilebody").outerHTML = data;
     });
 
-  //populate profit an hour select element
   var select = document.getElementById("profit-an-hour");
   var cedi = "&#8373;";
   for (var i = 5; i <= 50; i += 5) {
@@ -24,14 +25,15 @@ function InitCalender() {
     defaultView: "month",
     useCreationPopup: true,
     useDetailPopup: true,
+    isReadOnly: true,
+    usageStatistics: false,
     calendars: [
       {
         id: "1",
         name: "My Calendar",
-        color: "#ffffff",
-        bgColor: "#03bd9e",
-        dragBgColor: "#03bd9e",
-        borderColor: "#03bd9e",
+        color: "white",
+        borderColor: "blue",
+        backgroundColor: "rgba(38, 0, 255, 0.64)",
       },
     ],
   });
@@ -39,33 +41,50 @@ function InitCalender() {
   newcalendar.createEvents([
     {
       id: "event1",
-      calendarId: "cal2",
+      calendarId: "1",
       title: "Weekly meeting",
-      start: new Date(2025, 2, 19, 9, 0, 0), // March is month 2 (0-indexed)
+      start: new Date(2025, 2, 19, 9, 0, 0),
       end: new Date(2025, 2, 30, 10, 0, 0),
     },
-    {
-      id: "event2",
-      calendarId: "cal3",
-      title: "Weekly meeting",
-      start: new Date(2025, 2, 19, 10, 0, 0), // March is month 2 (0-indexed)
-      end: new Date(2025, 2, 19, 10, 0, 0),
-    },
-    {
-      id: "event3",
-      calendarId: "cal4",
-      title: "Lunch appointment",
-      start: new Date(2025, 2, 8, 12, 0, 0), // June is month 5 (0-indexed)
-      end: new Date(2025, 2, 8, 13, 0, 0),
-    },
-    {
-      id: "event4",
-      calendarId: "cal5",
-      title: "Vacation",
-      start: new Date(2025, 5, 8), // June is month 5 (0-indexed)
-      end: new Date(2025, 5, 10),
-      isAllday: true,
-      category: "allday",
-    },
   ]);
+  calendar = newcalendar;
+
+  document.getElementById("prev-btn").addEventListener("click", function () {
+    calendar.prev(); // Move to previous month
+    updateMonth();
+  });
+
+  document.getElementById("next-btn").addEventListener("click", function () {
+    calendar.next(); // Move to next month
+    updateMonth();
+  });
+
+  document.getElementById("today-btn").addEventListener("click", function () {
+    calendar.today(); // Move to today
+    updateMonth();
+  });
+
+  // View switch buttons
+  document.getElementById("month-view").addEventListener("click", function () {
+    calendar.changeView("month");
+    updateMonth();
+  });
+
+  document.getElementById("week-view").addEventListener("click", function () {
+    calendar.changeView("week");
+    updateMonth();
+  });
+
+  document.getElementById("day-view").addEventListener("click", function () {
+    calendar.changeView("day");
+    updateMonth();
+  });
+}
+
+function updateMonth() {
+  const date = calendar.getDate(); // Get current date
+  const monthYear = date
+    .toDate()
+    .toLocaleString("default", { month: "long", year: "numeric" });
+  document.getElementById("current-month").innerText = monthYear;
 }

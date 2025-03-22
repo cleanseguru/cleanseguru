@@ -13,17 +13,15 @@ function loadfooter(pagedocument) {
       link: "",
     },
   ];
-
-  // Remove the current page from the pages array
   pages = pages.filter(
     (page) => !page.link.endsWith(pagedocument.location.pathname)
   );
 
-  const footer = pagedocument.querySelector("footer");
+  const footer = pagedocument.querySelector("body > footer");
   const footerContent = document.createElement("div");
-  footerContent.className = "py-3 my-4";
+  footerContent.className = "pt-3 my-4 mx-5";
   footerContent.innerHTML = `
-  <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+  <ul class="nav justify-content-center border-bottom">
       ${pages
         .map(
           (page) =>

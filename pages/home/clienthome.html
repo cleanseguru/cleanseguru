@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,11 +17,7 @@
     <script src="https://uicdn.toast.com/calendar/latest/toastui-calendar.ie11.min.js"></script>
     <script src="/assets/js/clienthome.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadfooter(document);
-        });
-    </script>
+
 </head>
 
 <body>
@@ -38,17 +35,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal">Profile</a>
+                        <a id="profile-btn" class="nav-link btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#calendarModal">View Calendar</a>
+                        <a id="calendar-btn" class="nav-link btn btn-outline-primary" data-bs-toggle="modal"
+                            data-bs-target="#calendarModal">View Calendar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="notification-btn" type="button" class="nav-link btn btn-outline-primary"
+                            data-bs-toggle="modal" data-bs-target="#notificationModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-bell" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6" />
+                            </svg> Notifications
+                        </a>
+
                     </li>
                 </ul>
-
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">Search</button>
-                </form>
             </div>
         </div>
 
@@ -104,6 +109,21 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="notificationModal" tabindex="-1" aria-labelledby="notificationModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="notificationModalLabel">Notifications</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div onclick="" class="modal-body">
+                    <div id="notificationbody"></div>
+                </div>
+
+            </div>
+        </div>
+    </div>
 
     <div class="modal fade" id="calendarModal" tabindex="-1" aria-labelledby="calendarModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
@@ -113,12 +133,29 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div onclick="" class="modal-body">
+                    <nav class="navbar navbar-light bg-light bg-transparent">
+                        <div class="container-fluid d-flex justify-content-between align-items-center">
+                            <div>
+                                <button id="prev-btn" class="btn btn-outline-primary">◀ Previous</button>
+                                <button id="today-btn" class="btn btn-primary">Today</button>
+                                <button id="next-btn" class="btn btn-outline-primary">Next ▶</button>
+                            </div>
+                            <h5 id="current-month" class="mb-0 fw-bold"></h5>
+                            <div>
+                                <button id="month-view" class="btn btn-outline-secondary">Month</button>
+                                <button id="week-view" class="btn btn-outline-secondary">Week</button>
+                                <button id="day-view" class="btn btn-outline-secondary">Day</button>
+                            </div>
+                        </div>
+                    </nav>
                     <div id="calendarbody" style="height: 800px"></div>
+
                 </div>
             </div>
         </div>
     </div>
+    <footer></footer>
 </body>
-<footer></footer>
+
 
 </html>

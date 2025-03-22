@@ -14,11 +14,7 @@
     <link rel="stylesheet" href="/assets/css/BookingConfirm.css">
     <script src="/assets/js/cleaners.js"></script>
     <script src="/assets/js/main.js"> </script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            loadfooter(document);
-        });
-    </script>
+
 </head>
 
 <body>
@@ -51,9 +47,25 @@
             </div>
         </div>
     </div>
+    <div class="modal fade" id="profileviewModal" tabindex="-1" aria-labelledby="profileviewModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="profileviewModalLabel"> Profile</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="profileview"></div>
+                </div>
 
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    </footer>
 </body>
 
-<footer></footer>
 
 </html>

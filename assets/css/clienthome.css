@@ -115,12 +115,26 @@ body {
     color: white;
     font-size: 6vw;
 }
+
 #review-title {
     margin-left: 5vw;
     color: white;
     font-size: 4vw;
 }
-#carousel-title>span>span{
+
+#carousel-title>span>span {
     font-size: 3vw;
 
+}
+
+#profile-btn,
+#calendar-btn,
+#notification-btn {
+    margin-right: 10px;
+}
+
+#profile-btn:hover,
+#calendar-btn:hover,
+#notification-btn:hover {
+    color: white;
 }
